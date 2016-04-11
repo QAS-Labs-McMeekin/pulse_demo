@@ -1,0 +1,15 @@
+{
+  "name": "kitsune-ui",
+  "ambientDependencies": {
+    "dragula": "github:DefinitelyTyped/DefinitelyTyped/dragula/dragula.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "moment": "github:DefinitelyTyped/DefinitelyTyped/moment/moment.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "moment-node": "github:DefinitelyTyped/DefinitelyTyped/moment/moment-node.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#e937b3e64af586d19f2ea29fdf771e9dc4feecc8",
+    "semantic-ui": "file:./typings/custom/semantic-ui.d.ts"
+  }
+}
+

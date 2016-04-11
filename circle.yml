@@ -1,0 +1,37 @@
+general:
+  branches:
+    only:
+      - develop
+machine:
+  node:
+    version: 5.6.0
+  python:
+    version: 2.7.10
+  services:
+    - docker
+dependencies:
+  override:
+    - npm install:
+        environment:
+          PHANTOMJS_CDNURL: https://github.com/Medium/phantomjs/releases/
+  post:
+    - pip install awscli
+notify:
+  webhooks:
+    # A list of hook hashes, containing the url field
+    # gitter hook
+    - url: https://webhooks.gitter.im/e/4f0b169f1222b9175646
+test:
+  post:
+    - cp -R coverage $CIRCLE_ARTIFACTS
+    - cp -R coverage/junit $CIRCLE_TEST_REPORTS
+deployment:
+  develop:
+    branch: develop
+    commands:
+      - npm run build
+      - echo "$CIRCLE_SHA1" > dist/version.txt
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker build -t qasymphony/kitsune-ui:$CIRCLE_SHA1 .
+      - docker push qasymphony/kitsune-ui:$CIRCLE_SHA1
+      - ./deploy.sh dev qasymphony/kitsune-ui $CIRCLE_SHA1
