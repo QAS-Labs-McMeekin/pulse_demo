@@ -4,10 +4,10 @@
 ENV=$1
 IMG=$2
 SHA=$3
-EB_APP=todos
-EB_ENV=$EB_APP-$ENV
+EB_APP=qualityjam
+EB_ENV=$EB_APP-$ENV-1
 EB_REGION=ap-northeast-1
-DOCKERRUN_FILE=$SHA-Dockerrun.aws.json
+DOCKERRUN_FILE=$SHA-Dockerrun-QLJ.aws.json
 
 # create eb definition file
 sed "s/<IMG>/${IMG//\//\\/}:$SHA/; s/<S3_BUCKET>/$S3_BUCKET/" < Dockerrun.aws.json.template > $DOCKERRUN_FILE
