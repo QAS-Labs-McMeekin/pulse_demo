@@ -10,10 +10,10 @@ if (process.env.ENV === 'prod' ) {
   ENV_PROVIDERS.push(ELEMENT_PROBE_PROVIDERS);
 }
 
-import { TodosDemo } from './app/app';
+import { Todos } from './app/app';
 
 document.addEventListener('DOMContentLoaded', function main() {
-  return bootstrap(Kitsune, [
+  return bootstrap(Todos, [
     ...HTTP_PROVIDERS,
     ...ROUTER_PROVIDERS,
     ...ENV_PROVIDERS,
