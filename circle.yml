@@ -27,7 +27,7 @@ test:
     - cp -R coverage/junit $CIRCLE_TEST_REPORTS
 deployment:
   develop:
-    branch: develop
+    branch: master
     commands:
       - npm run build
       - echo "$CIRCLE_SHA1" > dist/version.txt
