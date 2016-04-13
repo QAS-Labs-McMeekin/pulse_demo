@@ -5,14 +5,14 @@ import {
   beforeEach,
 } from 'angular2/testing';
 
-describe('TODOS-51', () => {
+describe('TODO-52', () => {
 
  describe('Check for the correct contents of the header', () => {
-    it("should say Hello Quality Jam", (done) => {
+    it("should say Hello QualityJam!", (done) => {
       expect(true).toEqual(true);
       done();
     });
-    it("should contain an ! point", (done) => {
+    it("should contain an !", (done) => {
       expect(true).toEqual(true);
       done();
     });

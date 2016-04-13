@@ -1,0 +1,39 @@
+.ui.border-bottom {
+  border-bottom: 1px solid #adadad;
+}
+.dropdown.icon {
+  float: right;
+}
+/*----------------------------*/
+/*
+* use for Dragular
+*/
+.gu-mirror {
+  display: none;
+}
+.gu-transit {
+  opacity: 0.5;
+}
+.cards > div[id^=wi-] {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/*----------------------------*/
+.no-outline {
+  outline: 0 !important;
+}
+.no-border {
+  border: 0 solid transparent !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.margin-t-15 {
+  margin-top: 15px;
+}
+.margin-t-10 {
+  margin-top: 10px;
+}
+.margin-t-5 {
+  margin-top: 5px;
+}
