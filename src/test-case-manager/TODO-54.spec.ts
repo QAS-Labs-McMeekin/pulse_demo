@@ -5,7 +5,7 @@ import {
   beforeEach,
 } from 'angular2/testing';
 
-describe('TODO-52', () => {
+describe('TODO-54', () => {
 
  describe('Check for the correct contents of the header', () => {
     it("should say Hello QualityJam!", (done) => {

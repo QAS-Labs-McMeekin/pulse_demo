@@ -5,7 +5,7 @@ import {
   beforeEach,
 } from 'angular2/testing';
 
-describe('TODOS-51', () => {
+describe('TODOS-53', () => {
 
   describe('Check the new button', () => {
     it("should be a large button", (done) => {
