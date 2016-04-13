@@ -3,7 +3,6 @@ import {
   describe,
   expect,
   beforeEach,
-  fail
 } from 'angular2/testing';
 
 describe('TODOS-51', () => {

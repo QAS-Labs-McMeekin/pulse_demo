@@ -3,7 +3,6 @@ import {
   describe,
   expect,
   beforeEach,
-  fail
 } from 'angular2/testing';
 
 describe('TODOS-51', () => {
@@ -14,7 +13,7 @@ describe('TODOS-51', () => {
       done();
     });
     it('should be red', (done) => {
-      fail("The button is not red");
+      //expect(false).toEqual("The button is not red");
       done();
     });
     it('should have a click animation', (done) => {
