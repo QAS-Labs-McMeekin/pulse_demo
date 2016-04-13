@@ -7,7 +7,7 @@ import { Component } from 'angular2/core';
       <div class="ui container">
         <div class="ui text container">
           <h1 class="ui header">
-            Hello World!
+            Hello QualityJam
           </h1>
           
           <br/><br/>
