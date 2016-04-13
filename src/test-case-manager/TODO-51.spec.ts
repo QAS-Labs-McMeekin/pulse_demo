@@ -13,7 +13,7 @@ describe('TODOS-51', () => {
       done();
     });
     it('should be red', (done) => {
-      //expect(false).toEqual("The button is not red");
+      expect(false).toEqual("The button is not red");
       done();
     });
     it('should have a click animation', (done) => {
