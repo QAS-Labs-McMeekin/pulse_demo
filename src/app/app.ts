@@ -7,10 +7,11 @@ import { Component } from 'angular2/core';
       <div class="ui container">
         <div class="ui text container">
           <h1 class="ui header">
-            Hello QualityJam!
+            {{ greeting }} QualityJam!
           </h1>
-          
-          <br/><br/>
+          <br/>
+          <button class="ui inverted big blue button">Click Me!</button>
+          <br/><br/><br/>
             <img class="ui centered big image" src="/img/Labs-Logo.jpg">
           <br/><br/>
           <h3>
@@ -21,4 +22,28 @@ import { Component } from 'angular2/core';
     </div>
   `
 })
-export class Todos { }
+export class Todos {
+  private greeting: string;
+  private greetings: Arrays<string>;
+
+  constructor() {
+    this.greeting = "Hello";
+    this.greetings = new Arrays<string>();
+
+    let vals = [ this.greeting, "Hola", "Gutten Tag", "Bonjour", "Ciao", "Namaste", "Salaam" ];
+
+    for (let v of vals) {
+      this.greetings.push(v);
+    }
+  }
+
+  randomGreeting() {
+    this.greeting = this.greetings.randomElement();
+  }
+}
+
+class Arrays<T> extends Array<T> {
+  randomElement() {
+    return this[Math.floor(Math.random() * this.length)];
+  }
+}
