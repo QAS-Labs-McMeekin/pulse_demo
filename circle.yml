@@ -35,4 +35,3 @@ deployment:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker build -t qasymphony/kitsune-ui:$CIRCLE_SHA1 .
       - docker push qasymphony/kitsune-ui:$CIRCLE_SHA1
-      - ./deploy.sh dev qasymphony/kitsune-ui $CIRCLE_SHA1
