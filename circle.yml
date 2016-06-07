@@ -28,10 +28,6 @@ test:
     - cp -R coverage/junit $CIRCLE_TEST_REPORTS
 deployment:
   develop:
-    branch: master
+    branch: [develop master]
     commands:
-      - npm run build
       - echo "$CIRCLE_SHA1" > dist/version.txt
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker build -t qasymphony/kitsune-ui:$CIRCLE_SHA1 .
-      - docker push qasymphony/kitsune-ui:$CIRCLE_SHA1
