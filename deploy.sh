@@ -5,7 +5,7 @@ ENV=$1
 IMG=$2
 SHA=$3
 EB_APP=kitsune
-EB_ENV=qualityjam-$ENV-1
+EB_ENV=qualityjam-$ENV
 EB_REGION=ap-northeast-1
 DOCKERRUN_FILE=$SHA-Dockerrun-QLJ.aws.json
 
