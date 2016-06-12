@@ -1,8 +1,9 @@
 general:
   branches:
     only:
-      - master
       - develop
+      - test
+      - prod
 machine:
   node:
     version: 5.6.0
@@ -28,6 +29,6 @@ test:
     - cp -R coverage/junit $CIRCLE_TEST_REPORTS
 deployment:
   develop:
-    branch: [develop master]
+    branch: [develop test prod]
     commands:
       - echo "$CIRCLE_SHA1" > dist/version.txt
