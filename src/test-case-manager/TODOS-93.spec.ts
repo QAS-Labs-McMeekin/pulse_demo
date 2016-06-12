@@ -10,10 +10,10 @@ describe('TODOS-93', function() {
   let Inputs = { 
     'Test Run': [ {},
       {
-        result: true
+        result: 'See the QJ Logo'
       },
       {
-        result: true
+        result: 'Button is present, and blue'
       }
     ]
   };
