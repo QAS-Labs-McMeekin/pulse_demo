@@ -10,10 +10,10 @@ describe('TODOS-93', function() {
   let Inputs = { 
     'Test Run': [ {},
       {
-        result: false
+        result: true
       },
       {
-        result: false
+        result: true
       }
     ]
   };
