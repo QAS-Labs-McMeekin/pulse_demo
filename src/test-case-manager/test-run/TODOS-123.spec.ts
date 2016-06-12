@@ -10,10 +10,10 @@ describe('TODOS-123', function() {
   let Inputs = { 
     'Test Run': [ {},
       {
-        result: 'false'
+        result: 'Successful login'
       },
       {
-        result: 'false'
+        result: 'New feature works correctly'
       }
     ]
   };
